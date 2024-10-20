@@ -26,33 +26,27 @@ public class DialogReservation {
     }
 
     public void handleDateSelectedEvent(LocalDate date) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableTime();
     }
 
     public void handleTimeSelectedEvent(String time) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableNb_personne();
     }
 
     public void handleNumOfPersonsSelectedEvent(int nbPersons) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableTable();
     }
 
     public void handleTableSelectedEvent(int numTable) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableValider();
     }
 
     public void handleCancelEvent() {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.annulerPressed();
     }
 
     public void handleValidationEvent() {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.validerPressed();
     }
 
     public static void main(String[] args) {
